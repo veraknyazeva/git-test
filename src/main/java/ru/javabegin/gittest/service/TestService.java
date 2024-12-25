@@ -11,4 +11,8 @@ public class TestService {
         response.setAge(10);
         return response;
     }
+
+    public String test(){
+        return "hello";
+    }
 }
