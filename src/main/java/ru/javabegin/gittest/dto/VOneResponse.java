@@ -1,14 +1,21 @@
 package ru.javabegin.gittest.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class VOneResponse {
     @JsonProperty
-    public String name;
+    private String name;
 
     @JsonProperty
-    public String firstName;
+    private String firstName;
 
     @JsonProperty
-    public Integer age;
+    private Integer age;
 }
